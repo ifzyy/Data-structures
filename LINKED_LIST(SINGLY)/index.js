@@ -117,7 +117,7 @@ class SinglyLinkedList {
     reverse(){ 
         let node =this.head 
         this.head =this.tail 
-       this.tail = node
+        this.tail = node
         let next 
         let prev = null
 
@@ -132,10 +132,18 @@ class SinglyLinkedList {
 
 let list = new SinglyLinkedList()
 
-list.push("HELLO")
-list.push("GOODBYE")
-list.push("!")
-list.push("<3")
-list.push(":)")
+ [1    ,    2    ,3,         4]
+//node     next  
+// 1 -> null(prev)
+//prev     node    next
+//2 -> 1 -> null
+//          prev    node     next
+//3 -> 2 -> 1 -> null 
+//                   prev     node      next(end of list)
+//4 -> 3 -> 2 -> 1
+list.push(1)
+list.push(2)
+list.push(3)
+list.push(4)
 
 
