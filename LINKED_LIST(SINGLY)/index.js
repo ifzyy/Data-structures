@@ -62,7 +62,6 @@ class SinglyLinkedList {
         return this;
     }
     get(index) {
-        if(index === "last") return this.tail
         if (index < 0 || index >= this.length) return null;
         let counter = 0;
         let current = this.head;
